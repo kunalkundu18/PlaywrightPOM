@@ -48,9 +48,10 @@ public Page initBrowser(Properties prop) {
 }
 
 public Properties init_prop()  {
+	prop = new Properties();
 	try {
 		FileInputStream ip = new FileInputStream("./src\\test\\resources\\config\\config.properties");
-		prop = new Properties();
+		
 		prop.load(ip);
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
