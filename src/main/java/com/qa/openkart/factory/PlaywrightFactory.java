@@ -19,7 +19,7 @@ public class PlaywrightFactory {
 	Properties prop;
 public Page initBrowser(Properties prop) {
 	
-	String browserName =prop.getProperty("browser").trim();
+	String browserName =prop.getProperty("browser");
 	System.out.println("The broswer name is :" + browserName);
 	playwright =Playwright.create();
 	
